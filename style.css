@@ -66,15 +66,10 @@ body {
 
 .letter-window.final {
     aspect-ratio: auto;
-    min-height: 500px; /* increase from 400px */
-    max-height: 90vh; /* don't exceed 90% of screen height */
-    padding: 50px 30px 30px 30px; /* increase padding */
-    overflow-y: auto; /* add scrolling if content is very long */
-}
-.letter-window.final {
-    aspect-ratio: auto; /* removes the fixed ratio */
-    min-height: 400px; /* ensures minimum height */
-    padding: 40px 20px 20px 20px; /* more top padding for the final view */
+    min-height: 500px; 
+    max-height: 90vh;
+    padding: 80px 30px 30px 30px;
+    overflow-y: auto;
 }
 
 .letter-window.open {
