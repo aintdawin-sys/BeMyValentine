@@ -45,10 +45,10 @@ body {
     width: 500px;
     max-width: 800px;
     aspect-ratio: 3/2;
-    padding: 30px 20px 20px 20px; /* reduce top padding back to 30px */
+    padding: 20px 20px 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* change from center to flex-start */
+    justify-content: center;
     align-items: center;
     text-align: center;
     background-image: url("window.png");
@@ -62,6 +62,13 @@ body {
     opacity: 0;
     transition: transform 0.6s ease, opacity 0.6s ease;
 }
+
+.letter-window.final {
+    aspect-ratio: auto; /* removes the fixed ratio */
+    min-height: 400px; /* ensures minimum height */
+    padding: 40px 20px 20px 20px; /* more top padding for the final view */
+}
+
 .letter-window.open {
     transform: scale(1);
     opacity: 1;
