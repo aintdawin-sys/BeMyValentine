@@ -41,9 +41,9 @@ body {
     align-items: center;
 }
 
-.letter-window {
-    width: 85vw; /* use viewport width instead - 85% of screen width */
-    max-width: 1000px; /* increase max width */
+.letter-window{
+    width: 90vw;
+    max-width: 800px;
     aspect-ratio: 3/2;
     padding: 20px 20px 0 20px;
     display: flex;
@@ -57,7 +57,8 @@ body {
     background-position: center;
     border-radius: 12px;
     gap: 1px;
-    
+    padding-top: 180px;
+
     transform: scale(1.2);
     opacity: 0;
     transition: transform 0.6s ease, opacity 0.6s ease;
