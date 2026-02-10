@@ -51,7 +51,7 @@ noBtn.addEventListener("click", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-    title.textContent = "Yay! I knew you'd say yes!";
+    title.textContent = "Yay! Thank god you said yes!";
     catImg.src = "cat_dance.gif";
     document.querySelector(".letter-window").classList.add("final");
     buttons.style.display = "none";
