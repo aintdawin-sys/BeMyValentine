@@ -45,10 +45,10 @@ body {
     width: 500px;
     max-width: 800px;
     aspect-ratio: 3/2;
-    padding: 20px 20px 0 20px;
+    padding: 30px 20px 20px 20px; /* reduce top padding back to 30px */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* change from center to flex-start */
     align-items: center;
     text-align: center;
     background-image: url("window.png");
@@ -57,13 +57,11 @@ body {
     background-position: center;
     border-radius: 12px;
     gap: 1px;
-    padding-top: 40px;
-
+    
     transform: scale(1.2);
     opacity: 0;
     transition: transform 0.6s ease, opacity 0.6s ease;
 }
-
 .letter-window.open {
     transform: scale(1);
     opacity: 1;
